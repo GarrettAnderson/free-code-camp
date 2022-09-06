@@ -30,6 +30,4 @@ function cc(card) {
     return count + " " + "Hold"
   }
 
-  // return "Change Me";
-  // Only change code above this line
 }
