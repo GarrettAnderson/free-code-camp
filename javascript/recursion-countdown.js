@@ -27,7 +27,7 @@ function countup(n) {
     if (n < 1) {
       return []
     } else {
-      const countArray = countArray(n - 1) 
+      const countArray = countdown(n - 1) 
       countArray.unshift(n)
       console.log(countArray)
       return countArray
