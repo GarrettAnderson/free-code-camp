@@ -5,11 +5,16 @@ The function should return an array of integers which begins with a number repre
 
 function rangeOfNumbers(startNum, endNum) {
     if (startNum === endNum) {
+    console.log(`returning [${endNum}]`)
     return [startNum];
     } else {
+      console.log(`calling recursive function rangeOfNumbers(${startNum}, ${endNum - 1})`)
       const arr = rangeOfNumbers(startNum, endNum - 1) 
       arr.push(endNum)
-      console.log(arr)
+      console.log(`pushed ${endNum} into array: ${arr}`)
       return arr
     }
   };
+
+
+  rangeOfNumbers(1, 3) 
