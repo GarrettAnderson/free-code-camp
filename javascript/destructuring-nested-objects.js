@@ -1,4 +1,6 @@
 /* 
+Use Destructuring Assignment to Assign Variables from Nested Objects
+
 You can use the same principles from the previous two lessons to destructure values from nested objects.
 
 Using an object similar to previous examples:
