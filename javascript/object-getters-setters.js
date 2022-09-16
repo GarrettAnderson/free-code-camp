@@ -34,16 +34,16 @@ Note: It is convention to precede the name of a private variable with an undersc
 
 // Only change code below this line
 class Thermostat {
-    constructor(temperature) {
-      this.temperature = temperature
+    constructor(fahrenheit) {
+      this.fahrenheit = fahrenheit
     }
   
     get temperature() {
-      return this.temperature
+      return 5/9 * (this.fahrenheit - 32)
     }
   
-    set temperature(updatedTemperature) {
-      this._author = updatedTemperature
+    set temperature(celsius) {
+      this.fahrenheit = celsius * 9.0/5 + 32
     }
   
   }
