@@ -6,11 +6,9 @@ function palindrome(str) {
       for (var j = 0; j < reversedStr.length; j++) {
         if (splitStr[i] === reversedStr[j]) {
             return true
-        } else {
-          console.log(str) 
-          return false
         } 
       }
     }
+    return false
   }
   
