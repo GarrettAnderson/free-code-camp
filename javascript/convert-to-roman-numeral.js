@@ -1,12 +1,28 @@
 function convertToRoman(num) {
+  const values = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1,
+  };
+  let result = "";
 
-    const values = {I:1,IV:4,V:5,IX:9,X:10,XL:40,L:50, XC:90, C:100, CD:400, D:500, CM:900,M:1000}
-    const result = ''
-   
-     for (key in values) {
-       console.log(key)
-     }
-    return num;
-   }
-   
-   convertToRoman(36);
+  for (let key in values) {
+    // console.log(key)
+    result += key.repeat(Math.floor(num / values[key]));
+    num %= values[key];
+  }
+  console.log(result, num);
+  return result;
+}
+
+convertToRoman(36);
